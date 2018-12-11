@@ -104,8 +104,8 @@ class App extends Component {
         <ul class="dropdown-menu">
           <li><a tabindex="-1" href="/">HTML</a></li>
           <li><a tabindex="-1" href="/">CSS</a></li>
-          <li class="job__dropdown dropdown-submenu">
-            <a class="test" tabindex="-1" onClick={this.sideMenu}>New dropdown <span class="caret"></span></a>
+          <li class="job__dropdown__dropdown-submenu">
+            <li class="test" tabindex="-1" onClick={this.sideMenu}>New dropdown <span class="caret"></span></li>
             <ul class="dropdown-menu" style={{display:submenu}}>
               <li><a tabindex="-1" href="/">2nd level dropdown</a></li>
               <li><a tabindex="-1" href="/">2nd level dropdown</a></li>

@@ -1,38 +1,14 @@
-.job__dropdown{
 
 
-      & .dropdown-submenu {
 
-
-        position: relative;
-
-        
-        & .dropdown-menu {
-
-          top: 0;
-          left: 100%;
-          margin-top: -1px;
-
-        }
-
-
-      }
-
-     
-      
-
-
-}
-
-
-.dropdown-submenu {
+.job__dropdown__dropdown-submenu {
   position: relative;
 }
 
-.dropdown-submenu .dropdown-menu {
+.job__dropdown__dropdown-submenu .dropdown-menu {
   top: 0;
   left: 100%;
   margin-top: -1px;
 }
 
-/*const submenu = this.state.submenu */
+// /*const submenu = this.state.submenu */
