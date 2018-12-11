@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import './App.scss';
 
 class App extends Component {
 
@@ -104,7 +104,7 @@ class App extends Component {
         <ul class="dropdown-menu">
           <li><a tabindex="-1" href="/">HTML</a></li>
           <li><a tabindex="-1" href="/">CSS</a></li>
-          <li class="dropdown-submenu">
+          <li class="job__dropdown dropdown-submenu">
             <a class="test" tabindex="-1" onClick={this.sideMenu}>New dropdown <span class="caret"></span></a>
             <ul class="dropdown-menu" style={{display:submenu}}>
               <li><a tabindex="-1" href="/">2nd level dropdown</a></li>
