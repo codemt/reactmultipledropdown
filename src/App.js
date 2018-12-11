@@ -45,17 +45,33 @@ class App extends Component {
   sideMenu = (e) => {
 
         e.preventDefault();
-        this.setState({
 
-              submenu : 'block'
+        if(this.state.submenu === 'true'){
 
-        })
+          this.setState({
+
+            submenu : 'false'
+
+            })
+
+        }
+        if(this.state.submenu === 'false'){
+
+              this.setState({
+
+                  submenu : 'true'
+
+              })
+
+        }
+
+}
 
 
-  }
   render() {
   
       let dropdown = 'dropdown';
+      let submenu = 'none';
       if(this.state.open === 'true'){
 
          dropdown = 'dropdown open'
@@ -63,6 +79,17 @@ class App extends Component {
       if(this.state.open === 'false'){
 
           dropdown = 'dropdown'
+      }
+
+      if(this.state.submenu === 'true'){
+
+          submenu = 'block' 
+      }
+      if(this.state.submenu === 'false')
+      {
+
+          submenu = 'none'
+
       }
        
    
@@ -78,8 +105,8 @@ class App extends Component {
           <li><a tabindex="-1" href="/">HTML</a></li>
           <li><a tabindex="-1" href="/">CSS</a></li>
           <li class="dropdown-submenu">
-            <div class="test" tabindex="-1" onClick={this.sideMenu}>New dropdown <span class="caret"></span></div>
-            <ul class="dropdown-menu">
+            <a class="test" tabindex="-1" onClick={this.sideMenu}>New dropdown <span class="caret"></span></a>
+            <ul class="dropdown-menu" style={{display:submenu}}>
               <li><a tabindex="-1" href="/">2nd level dropdown</a></li>
               <li><a tabindex="-1" href="/">2nd level dropdown</a></li>
               <li class="dropdown-submenu">
